@@ -2,10 +2,10 @@ import { overviewStats } from "@/constants";
 
 import Header from "@/components/Header";
 import StatCard from "@/components/StatCard";
-import SalesOverviewChart from "@/components/overview/SalesOverviewChart";
-import CategoryDistributionChart from "@/components/overview/CategoryDistributionChart";
-import SalesChannelChart from "@/components/overview/SalesChannelChart";
 import Container from "@/components/Container";
+import SalesChannelChart from "@/components/overview/SalesChannelChart";
+import SalesOverviewChart from "@/components/overview/SalesOverviewChart";
+import CategoryDistributionChart from "@/components/CategoryDistributionChart";
 
 export default function Home() {
   return (

@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from "recharts";
-import Container from "../Container";
+import Container from "./Container";
 
 const CategoryDistributionChart = () => {
   return (
