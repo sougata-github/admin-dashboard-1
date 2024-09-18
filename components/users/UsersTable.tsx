@@ -1,0 +1,7 @@
+import { userData } from "@/constants";
+
+const UsersTable = () => {
+  return <div>UsersTable</div>;
+};
+
+export default UsersTable;
