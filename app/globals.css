@@ -24,6 +24,14 @@
   .text-balance {
     text-wrap: balance;
   }
+
+  .section-container {
+    @apply bg-gray-800/50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700;
+  }
+
+  .text-heading {
+    @apply text-lg font-medium text-gray-100;
+  }
 }
 
 @layer base {

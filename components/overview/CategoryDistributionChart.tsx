@@ -1,8 +1,7 @@
 "use client";
 
-import { categoryData, COLORS } from "@/constants";
+import { categoryData, colors } from "@/constants";
 
-import { motion } from "framer-motion";
 import {
   PieChart,
   Cell,
@@ -11,27 +10,12 @@ import {
   ResponsiveContainer,
   Tooltip,
 } from "recharts";
+import Container from "../Container";
 
 const CategoryDistributionChart = () => {
   return (
-    <motion.div
-      className="cursor-pointer bg-gray-800/50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700"
-      initial={{
-        opacity: 0,
-        y: 5,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-      }}
-      transition={{
-        ease: "easeIn",
-        delay: 0.1,
-      }}
-    >
-      <h2 className="text-lg font-medium mb-4 text-gray-100">
-        Category Distribution
-      </h2>
+    <Container className="section-container">
+      <h2 className="text-heading">Category Distribution</h2>
 
       <div className="h-80">
         <ResponsiveContainer width={"100%"} height={"100%"}>
@@ -48,10 +32,10 @@ const CategoryDistributionChart = () => {
                 `${name} ${(percent * 100).toFixed(0)}%`
               }
             >
-              {categoryData.map((category, index) => (
+              {categoryData.map((_, index) => (
                 <Cell
                   key={`cell-${index}`}
-                  fill={COLORS[index % COLORS.length]}
+                  fill={colors[index % colors.length]}
                 />
               ))}
             </Pie>
@@ -67,7 +51,7 @@ const CategoryDistributionChart = () => {
           </PieChart>
         </ResponsiveContainer>
       </div>
-    </motion.div>
+    </Container>
   );
 };
 

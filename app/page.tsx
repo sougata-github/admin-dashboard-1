@@ -1,12 +1,11 @@
-"use client";
-
-import { motion } from "framer-motion";
 import { overviewStats } from "@/constants";
 
 import Header from "@/components/Header";
 import StatCard from "@/components/StatCard";
 import SalesOverviewChart from "@/components/overview/SalesOverviewChart";
 import CategoryDistributionChart from "@/components/overview/CategoryDistributionChart";
+import SalesChannelChart from "@/components/overview/SalesChannelChart";
+import Container from "@/components/Container";
 
 export default function Home() {
   return (
@@ -15,20 +14,7 @@ export default function Home() {
 
       <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8">
         {/* Stats */}
-        <motion.div
-          className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-4 mb-8"
-          initial={{
-            opacity: 0,
-            y: 5,
-          }}
-          animate={{
-            opacity: 1,
-            y: 0,
-          }}
-          transition={{
-            duration: 0.5,
-          }}
-        >
+        <Container className="grid grid-cols-1 sm:grid-cols-2 gap-5 md:grid-cols-2 xl:grid-cols-4 mb-8">
           {overviewStats.map((stat) => (
             <StatCard
               key={stat.name}
@@ -45,12 +31,13 @@ export default function Home() {
               color={stat.color}
             />
           ))}
-        </motion.div>
+        </Container>
 
         {/* Charts */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           <SalesOverviewChart />
           <CategoryDistributionChart />
+          <SalesChannelChart />
         </div>
       </main>
     </div>
