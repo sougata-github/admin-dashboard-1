@@ -15,7 +15,7 @@ import {
 const ChannelPerformance = () => {
   return (
     <Container className="section-container overflow-x-clip">
-      <h2 className="text-heading">Category Distribution</h2>
+      <h2 className="text-heading">Channel Performance</h2>
 
       <div className="h-80">
         <ResponsiveContainer width={"100%"} height={"100%"}>
