@@ -16,7 +16,7 @@ const Sidebar = () => {
   return (
     <motion.aside
       className={cn(
-        "hidden sm:block relative z-10 transiton-all duration-300 flex-shrink-0 [transition-timing-function:linear]",
+        "hidden md:block relative z-10 transiton-all duration-300 flex-shrink-0 [transition-timing-function:linear]",
         isOpen ? "w-48" : "w-20"
       )}
       animate={{
@@ -58,7 +58,7 @@ const Sidebar = () => {
                       <motion.span
                         className="ml-4 whitespace-nowrap"
                         initial={{
-                          x: -10,
+                          x: -5,
                           opacity: 0,
                           width: 0,
                         }}

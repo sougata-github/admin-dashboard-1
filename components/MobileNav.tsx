@@ -20,7 +20,7 @@ const MobileNav = () => {
 
   return (
     <Sheet>
-      <SheetTrigger className="block sm:hidden">
+      <SheetTrigger className="block md:hidden">
         <Menu className="size-6" />
       </SheetTrigger>
       <SheetContent
