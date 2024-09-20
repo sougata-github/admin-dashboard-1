@@ -18,6 +18,8 @@ import {
   CheckCircle,
   Eye,
 } from "lucide-react";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaGoogle } from "react-icons/fa";
 
 export const sidebarLinks = [
   {
@@ -496,24 +498,24 @@ export const orderChartColors = [
   "#2AB7CA",
 ];
 
-export const connectedAccounts = [
+export const connectedAccountsData = [
   {
     id: 1,
     name: "Google",
     connected: true,
-    icon: "/google.png",
+    icon: FaGoogle,
   },
   {
     id: 2,
     name: "Facebook",
     connected: false,
-    icon: "/facebook.svg",
+    icon: FaFacebook,
   },
   {
     id: 3,
-    name: "Twitter",
+    name: "X(Twitter)",
     connected: true,
-    icon: "/x.png",
+    icon: FaXTwitter,
   },
 ];
 

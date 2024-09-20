@@ -12,7 +12,7 @@ const AIPoweredInsights = () => {
 
       <div className="space-y-4">
         {insights.map((insight) => (
-          <div key={insight.insight} className="flex items-start space-x-3">
+          <div key={insight.insight} className="flex items-center space-x-3">
             <div
               className={cn("p-2 rounded-full bg-opacity-20", insight.color)}
             >

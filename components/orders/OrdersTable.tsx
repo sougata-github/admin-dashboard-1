@@ -118,7 +118,7 @@ const OrdersTable = () => {
                   </td>
 
                   <td className="pl-10 py-4 whitespace-nowrap text-sm text-gray-300">
-                    <button className="text-indigo-400 hover:text-indigo-300 mr-2">
+                    <button className="text-indigo-400 md:hover:text-indigo-300 mr-2">
                       <Eye size={18} />
                     </button>
                   </td>

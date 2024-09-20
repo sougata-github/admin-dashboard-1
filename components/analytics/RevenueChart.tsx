@@ -16,7 +16,7 @@ import {
 const RevenueChart = () => {
   return (
     <Container className="section-container mt-8 lg:col-span-2">
-      <h2 className="text-heading">Revenuew vs Target</h2>
+      <h2 className="text-heading mb-4">Revenue vs Target</h2>
 
       <div className="w-full h-80">
         <ResponsiveContainer>

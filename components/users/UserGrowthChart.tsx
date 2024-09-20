@@ -16,7 +16,7 @@ import {
 const UserGrowthChart = () => {
   return (
     <Container className="section-container">
-      <h2 className="text-heading mb-4">Sales by channel</h2>
+      <h2 className="text-heading mb-4">User Growth</h2>
       <div className="h-80">
         <ResponsiveContainer>
           <LineChart data={userGrowthData}>
