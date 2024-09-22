@@ -28,7 +28,7 @@ const Sidebar = () => {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen((prev: boolean) => !prev)}
-          className="p-2 rounded-xl full hover:bg-gray-700 transition-colors duration-300 max-w-fit hidden sm:block"
+          className="p-2 rounded-lg full hover:bg-gray-700 transition-colors duration-300 max-w-fit hidden sm:block"
         >
           <Menu className="size-6" />
         </motion.button>
