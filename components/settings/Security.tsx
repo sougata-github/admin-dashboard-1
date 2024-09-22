@@ -25,7 +25,7 @@ const Security = () => {
         />
 
         <div className="mt-4">
-          <button className="bg-indigo-600 md:hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 w-full sm:w-auto">
+          <button className="bg-indigo-600 md:hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 w-full sm:w-auto">
             Change Password
           </button>
         </div>

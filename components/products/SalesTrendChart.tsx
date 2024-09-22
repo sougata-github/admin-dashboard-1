@@ -23,8 +23,13 @@ const SalesTrendChart = () => {
         <ResponsiveContainer>
           <LineChart data={productsData}>
             <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
-            <XAxis dataKey="month" stroke="#9CA3AF" />
-            <YAxis stroke="#9CA3AF" />
+            <XAxis
+              dataKey="month"
+              stroke="#9CA3AF"
+              tickLine={false}
+              tickMargin={8}
+            />
+            <YAxis stroke="#9CA3AF" tickLine={false} tickMargin={2} />
             <Tooltip
               contentStyle={{
                 backgroundColor: "rgba(31, 41, 55, 0.8)",
@@ -34,7 +39,8 @@ const SalesTrendChart = () => {
             />
             <Legend />
             <Line
-              type="monotone"
+              dot={false}
+              type="natural"
               dataKey="sales"
               stroke="#8B5CF6"
               strokeWidth={2}

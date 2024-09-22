@@ -1,18 +1,15 @@
 "use client";
 
-import { colors, productPerformanceData } from "@/constants";
+import { productPerformanceData } from "@/constants";
 
 import Container from "../Container";
 import {
   Bar,
   BarChart,
-  CartesianGrid,
-  Cell,
   Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
-  YAxis,
 } from "recharts";
 
 const ProductPerformance = () => {
@@ -23,9 +20,13 @@ const ProductPerformance = () => {
       <div className="h-80">
         <ResponsiveContainer>
           <BarChart data={productPerformanceData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#485563" />
-            <XAxis dataKey="name" stroke="#9CA3AF" />
-            <YAxis stroke="#9CA3AF" />
+            <XAxis
+              dataKey="name"
+              stroke="#9CA3AF"
+              axisLine={false}
+              tickLine={false}
+              tickMargin={2}
+            />
             <Tooltip
               contentStyle={{
                 backgroundColor: "rgba(31,41,55,0.8)",
@@ -34,9 +35,9 @@ const ProductPerformance = () => {
               itemStyle={{ color: "#E5E7EB" }}
             />
             <Legend />
-            <Bar dataKey="sales" fill="#8884D8" />
-            <Bar dataKey="revenue" fill="#10B981" />
-            <Bar dataKey="profit" fill="#F59E0B" />
+            <Bar dataKey="sales" fill="#8884D8" radius={4} />
+            <Bar dataKey="revenue" fill="#10B981" radius={4} />
+            <Bar dataKey="profit" fill="#F59E0B" radius={4} />
           </BarChart>
         </ResponsiveContainer>
       </div>

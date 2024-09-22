@@ -31,7 +31,7 @@ const ConnectedAccounts = () => {
 
             <button
               className={cn(
-                "px-3 py-1 rounded",
+                "px-3 py-1 rounded-lg",
 
                 account.connected
                   ? "bg-green-600 md:hover:bg-gray-700"

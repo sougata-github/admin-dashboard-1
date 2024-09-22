@@ -25,7 +25,7 @@ text-indigo-400 mr-4 size-6"
             <p className="text-gray-400">john.doe@example.com</p>
           </div>
         </div>
-        <button className="bg-indigo-600 md:hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded transition duration-300 w-full sm:w-auto">
+        <button className="bg-indigo-600 md:hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 w-full sm:w-auto">
           Edit Profile
         </button>
       </SettingSection>

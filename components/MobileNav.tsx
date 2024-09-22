@@ -27,7 +27,7 @@ const MobileNav = () => {
         side="left"
         className="w-64 bg-gray-800 px-4 py-12 flex flex-col border-b border-gray-700"
       >
-        <nav className="flex flex-col mt-6">
+        <nav className="flex flex-col mt-2">
           {sidebarLinks.map((item) => (
             <Link href={item.href} key={item.name}>
               <div

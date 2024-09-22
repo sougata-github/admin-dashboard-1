@@ -12,7 +12,7 @@ const DangerZone = () => {
       <p className="text-gray-300 mb-4">
         Permanently delete your account and all of your content.
       </p>
-      <button className="bg-red-600 md:hover:bg-red-700 text-white font-bold py-2 px-4 rounded transition duratio-300">
+      <button className="bg-red-600 md:hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition duratio-300">
         Delete Account
       </button>
     </Container>

@@ -28,12 +28,12 @@ const CustomerSegmentation = () => {
           <RadarChart
             cx="50%"
             cy="50%"
-            outerRadius="80%"
+            outerRadius="60%"
             data={customerSegmentationData}
           >
-            <PolarGrid stroke="#374151" />
-            <PolarAngleAxis dataKey="subject" stroke="#9CA3AF" />
-            <PolarRadiusAxis angle={60} domain={[0, 150]} stroke="#9CA3AF" />
+            <PolarGrid />
+            <PolarAngleAxis dataKey="subject" />
+
             <Radar
               name="Segment A"
               dataKey="A"

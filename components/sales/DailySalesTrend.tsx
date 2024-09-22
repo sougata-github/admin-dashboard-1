@@ -6,13 +6,11 @@ import Container from "../Container";
 import {
   Bar,
   BarChart,
-  CartesianGrid,
   Cell,
   Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
-  YAxis,
 } from "recharts";
 
 const DailySalesTrend = () => {
@@ -23,9 +21,14 @@ const DailySalesTrend = () => {
       <div className="h-80">
         <ResponsiveContainer>
           <BarChart data={dailySalesData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#485563" />
-            <XAxis dataKey="name" stroke="#9CA3AF" />
-            <YAxis stroke="#9CA3AF" />
+            <XAxis
+              dataKey="name"
+              stroke="#9CA3AF"
+              tickLine={false}
+              axisLine={false}
+              tickMargin={2}
+            />
+
             <Tooltip
               contentStyle={{
                 backgroundColor: "rgba(31,41,55,0.8)",
@@ -34,7 +37,7 @@ const DailySalesTrend = () => {
               itemStyle={{ color: "#E5E7EB" }}
             />
             <Legend />
-            <Bar dataKey={"sales"} fill="#8884D8">
+            <Bar dataKey={"sales"} fill="#8884D8" radius={4}>
               {dailySalesData.map((_, index) => (
                 <Cell
                   key={`cell-${index}`}

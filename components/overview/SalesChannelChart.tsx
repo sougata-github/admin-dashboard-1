@@ -6,13 +6,11 @@ import { colors, salesChannelData } from "@/constants";
 import {
   Bar,
   BarChart,
-  CartesianGrid,
   Cell,
   Legend,
   ResponsiveContainer,
   Tooltip,
   XAxis,
-  YAxis,
 } from "recharts";
 
 const SalesChannelChart = () => {
@@ -23,9 +21,13 @@ const SalesChannelChart = () => {
       <div className="h-80">
         <ResponsiveContainer>
           <BarChart data={salesChannelData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#485563" />
-            <XAxis dataKey="name" stroke="#9CA3AF" />
-            <YAxis stroke="#9CA3AF" />
+            <XAxis
+              dataKey="name"
+              stroke="#9CA3AF"
+              tickLine={false}
+              tickMargin={2}
+              axisLine={false}
+            />
             <Tooltip
               contentStyle={{
                 backgroundColor: "rgba(31,41,55,0.8)",
@@ -34,7 +36,7 @@ const SalesChannelChart = () => {
               itemStyle={{ color: "#E5E7EB" }}
             />
             <Legend />
-            <Bar dataKey={"value"} fill="#8884D8">
+            <Bar dataKey={"value"} fill="#8884D8" radius={4}>
               {salesChannelData.map((_, index) => (
                 <Cell
                   key={`cell-${index}`}

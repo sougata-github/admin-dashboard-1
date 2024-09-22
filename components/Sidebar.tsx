@@ -23,12 +23,12 @@ const Sidebar = () => {
         width: isOpen ? 192 : 80,
       }}
     >
-      <div className="h-full bg-gray-800/50 backdrop-blur-md p-4 flex flex-col border-r border-gray-700">
+      <div className="h-full bg-gray-800/50 backdrop-blur-md p-4 flex flex-col border-r border-white/5">
         <motion.button
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           onClick={() => setIsOpen((prev: boolean) => !prev)}
-          className="p-2 rounded-full hover:bg-gray-700 transition-colors duration-300 max-w-fit hidden sm:block"
+          className="p-2 rounded-xl full hover:bg-gray-700 transition-colors duration-300 max-w-fit hidden sm:block"
         >
           <Menu className="size-6" />
         </motion.button>
@@ -40,7 +40,7 @@ const Sidebar = () => {
                 <>
                   <motion.div
                     className={cn(
-                      "flex items-center p-4 pl-2 text-sm font-medium rounded-lg mb-2",
+                      "flex items-center p-4 pl-2 text-sm font-medium rounded-lg lg mb-2",
                       isOpen &&
                         "hover:bg-gray-700 transition-colors duration-300",
                       isOpen && item.href === pathname && "bg-gray-700"

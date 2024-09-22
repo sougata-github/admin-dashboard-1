@@ -31,6 +31,8 @@ const CategoryDistributionChart = () => {
               label={({ name, percent }) =>
                 `${name} ${(percent * 100).toFixed(0)}%`
               }
+              innerRadius={60}
+              strokeWidth={2}
             >
               {categoryData.map((_, index) => (
                 <Cell

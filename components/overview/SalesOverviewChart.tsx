@@ -22,8 +22,13 @@ const SalesOverviewChart = () => {
         <ResponsiveContainer width={"100%"} height={"100%"}>
           <LineChart data={salesData}>
             <CartesianGrid strokeDasharray="3 3" stroke="#4B5563" />
-            <XAxis dataKey={"name"} stroke="#9CA3AF" />
-            <YAxis stroke="#9CA3AF" />
+            <XAxis
+              dataKey={"name"}
+              stroke="#9CA3AF"
+              tickLine={false}
+              tickMargin={8}
+            />
+            <YAxis stroke="#9CA3AF" tickLine={false} tickMargin={2} />
             <Tooltip
               contentStyle={{
                 backgroundColor: "rgba(31,41,55,0.8)",
@@ -31,16 +36,7 @@ const SalesOverviewChart = () => {
               }}
               itemStyle={{ color: "#E5E7EB" }}
             />
-            <Line
-              type="monotone"
-              dataKey="sales"
-              strokeWidth={3}
-              dot={{ fill: "#6366F1", strokeWidth: 2, r: 6 }}
-              activeDot={{
-                r: 8,
-                strokeWidth: 2,
-              }}
-            />
+            <Line dot={false} type="natural" dataKey="sales" strokeWidth={3} />
           </LineChart>
         </ResponsiveContainer>
       </div>

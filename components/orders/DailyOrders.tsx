@@ -23,18 +23,14 @@ const DailyOrders = () => {
         <ResponsiveContainer>
           <LineChart data={dailyOrdersData}>
             <CartesianGrid strokeDasharray="3 3" stroke="#4B5563" />
-            <XAxis dataKey="date" stroke="#9CA3AF" />
-            <YAxis stroke="#9CA3AF" />
-            <Line
-              dataKey="orders"
-              type="monotone"
-              strokeWidth={3}
-              dot={{ fill: "#6366F1", strokeWidth: 2, r: 6 }}
-              activeDot={{
-                r: 8,
-                strokeWidth: 2,
-              }}
+            <XAxis
+              dataKey="date"
+              stroke="#9CA3AF"
+              tickLine={false}
+              tickMargin={8}
             />
+            <YAxis stroke="#9CA3AF" tickLine={false} tickMargin={2} />
+            <Line dot={false} dataKey="orders" type="natural" strokeWidth={3} />
 
             <Tooltip
               contentStyle={{

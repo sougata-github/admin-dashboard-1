@@ -99,7 +99,7 @@ const OrdersTable = () => {
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100">
                     <span
                       className={cn(
-                        "px-2 text-xs inline-flex leading-5 font-semibold rounded-full text-white bg-green-500",
+                        "px-2 text-xs inline-flex leading-5 font-semibold rounded-xl full text-white bg-green-500",
                         item.status === "Processing" &&
                           "bg-yellow-200 text-yellow-600",
                         item.status === "Delivered" &&

@@ -1,10 +1,10 @@
 import "./globals.css";
 import { Metadata } from "next";
 import { cn } from "@/lib/utils";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
 
-const inter = Inter({ subsets: ["latin"] });
+const dm_sans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Admin Dashboard",
@@ -20,8 +20,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "flex h-screen bg-gray-800 text-gray-100 overflow-hidden",
-          inter.className
+          "flex h-screen bg-black text-gray-100 overflow-hidden",
+          dm_sans.className
         )}
       >
         <Sidebar />

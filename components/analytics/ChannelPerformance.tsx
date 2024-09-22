@@ -31,6 +31,8 @@ const ChannelPerformance = () => {
               label={({ name, percent }) =>
                 `${name} ${(percent * 100).toFixed(0)}%`
               }
+              innerRadius={60}
+              strokeWidth={2}
             >
               {channelData.map((_, index) => (
                 <Cell

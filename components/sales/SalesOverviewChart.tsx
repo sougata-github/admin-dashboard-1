@@ -24,9 +24,14 @@ const SalesOverviewChart = () => {
       <div className="w-full h-80">
         <ResponsiveContainer>
           <AreaChart data={monthlySalesData}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
-            <XAxis dataKey="month" stroke="#9CA3AF" />
-            <YAxis stroke="#9CA3AF" />
+            <XAxis
+              dataKey="month"
+              stroke="#9CA3AF"
+              tickLine={false}
+              tickMargin={8}
+            />
+            <YAxis stroke="#9CA3AF" tickLine={false} tickMargin={2} />
+            {/* <CartesianGrid strokeDasharray="3 3" /> */}
             <Tooltip
               contentStyle={{
                 backgroundColor: "rgba(31, 41, 55, 0.8)",
@@ -35,7 +40,7 @@ const SalesOverviewChart = () => {
               itemStyle={{ color: "#E5E7EB" }}
             />
             <Area
-              type="monotone"
+              type="natural"
               dataKey="sales"
               stroke="#8B5Cf6"
               fill="#8B5CF6"

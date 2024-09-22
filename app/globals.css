@@ -26,7 +26,7 @@
   }
 
   .section-container {
-    @apply bg-gray-800/50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-gray-700;
+    @apply bg-gray-800/50 backdrop-blur-md shadow-lg rounded-xl p-6 border border-white/5;
   }
 
   .text-heading {

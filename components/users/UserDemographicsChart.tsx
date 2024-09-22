@@ -31,6 +31,8 @@ const UserDemographicsChart = () => {
               label={({ name, percent }) =>
                 `${name} ${(percent * 100).toFixed(0)}%`
               }
+              innerRadius={60}
+              strokeWidth={2}
             >
               {userDemographicsData.map((_, index) => (
                 <Cell

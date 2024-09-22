@@ -36,7 +36,7 @@ const UsersTable = () => {
                 handleChange(e.target.value);
               }}
               placeholder="Search users"
-              className="bg-gray-700 text-white placeholder-gray-400 rounded-lg
+              className="bg-gray-700 text-white placeholder-gray-400 rounded-lg 
             pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
             <Search
@@ -91,7 +91,7 @@ const UsersTable = () => {
                   </td>
 
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100">
-                    <span className="px-2 text-xs inline-flex leading-5 font-semibold rounded-full bg-blue-500 text-blue-100">
+                    <span className="px-2 text-xs inline-flex leading-5 font-semibold rounded-xl full bg-blue-500 text-blue-100">
                       {item.role}
                     </span>
                   </td>
@@ -99,7 +99,7 @@ const UsersTable = () => {
                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100">
                     <span
                       className={cn(
-                        "px-2 text-xs inline-flex leading-5 font-semibold rounded-full text-white bg-green-500",
+                        "px-2 text-xs inline-flex leading-5 font-semibold rounded-xl full text-white bg-green-500",
                         item.status === "Active" && "bg-green-500",
                         item.status === "Inactive" && "bg-red-500"
                       )}
