@@ -65,7 +65,7 @@ export const salesData = [
   { name: "Mar", sales: 6800 },
   { name: "Apr", sales: 6300 },
   { name: "May", sales: 7100 },
-  { name: "Jun", sales: 7500 },
+  { name: "Jun", sales: 7400 },
 ];
 
 export const categoryData = [
